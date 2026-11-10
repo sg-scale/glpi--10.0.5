@@ -31,7 +31,7 @@ jobs:
           rm -rf "${{ env.APPLICATION_ROOT }}/*"
           rm -rf "${{ env.APP_CONTAINER_HOME }}/*"
       - name: "Checkout"
-        uses: "actions/checkout@v3"
+        uses: "actions/checkout@v7"
         with:
           ref: ${{ matrix.branch }}
       - name: "Restore dependencies cache"
